@@ -13,8 +13,14 @@ table of contents
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    background-color: white;
 }
+body
+{
+  background-image: url(bg.png);
+  background-color:rgb(243,242,242); 
+
+}
+
 /*header style*/
 .header
 {
@@ -80,22 +86,183 @@ li a
 }
 div.nav
 {
-    display: block;
+    display: flex;
 }
 nav a:hover 
 {
     color: #56bc94;
 }
-/*end nav style*/
-  /*body style  */
-.content
+/*end of nav style*/
+  /*responsive header
+@media screen and (max-width: 700px)
 {
-    height: 200vh;
-    background-color: #333;
-    background-blend-mode: multiply;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    .nav__list
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: blueviolet;
+    }
+.content{
+    background-color:#56bc94;
 }
-  
+}*/ 
+
+  /*body style  */
+/*the title of plan section*/
+h2
+{
+    position: relative;
+    padding-top: 150px;
+    text-align: center;
+    font-family:  'Lato',arial, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: #444;
+
+}
+
+/*the style of three plans */
+.plan-div
+{
+    display :flex;
+    justify-content: space-between;    
+    position: relative;
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-right:60px;
+    padding-bottom: 120px;
+
+}
+
+  .personal
+  {
+    padding-left: 130px;
+    padding-right: 18px;
+  }
+  .Business
+  {
+      padding-right: 180px;
+  }
+ 
+.plan {
+    display: inline-block;
+    margin: 10px 1%;
+    font-family: 'Lato', Arial, sans-serif;
+   
+  }
+.plan-inner {
+    background: #fff;
+    margin: 0 auto;
+    min-width: 280px;
+    max-width: 100%;
+    position:relative;
+    border-radius: 0.25rem;/*////////*/
+  }
+  /*
+  #9fd9c2  
+  #56bc94
+  #c4e7d9
+  */
+  .entry-title
+  {
+        background: #c4e7d9;
+        height: 130px;
+        position: relative;
+        display: flex;
+        justify-content:center ;
+        text-align: center;
+        margin-bottom: 70px;
+        border-radius: 0.25rem;
+  }
+.entry-title>h3 {
+    background: #c4e7d9;
+    color:#225742;
+    font-size: 18px; /*18px*/
+    text-align: center;
+    padding-top: 35px ;/*35*/
+   font-weight: 500;
+    margin: 0;
+  }
+/*the style of price */
+.entry-title .price {
+    position: absolute;
+    bottom: -60px;
+    background: #56bc94;
+    height: 120px;
+    width: 120px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid #9fd9c2;/**/
+    line-height: 120px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+  }
+  .price .currency 
+  {
+    position:absolute;
+    font-size: 1rem;
+    font-weight: 400;
+    padding-top: 0px;
+    padding-left: 5px;
+    text-align: center;
+    color: #fff;
+    bottom: -1px;
+    left: 36px;
+  }
+ .price .number 
+  {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 3.0;
+    left:40px;
+  } 
+/*the style of list */
+.entry-content {
+  color: #323232;
+}
+.entry-content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.entry-content li {
+  border-bottom: 1px solid #efefef;
+  padding: 10px 0;
+}
+.entry-content li:last-child {
+  border: none;
+}
+/*the style of icon before the list-item*/
+.fa-check,.fa-times,.item-disable
+{
+  margin-right: 8px;
+  font-family: 'FontAwesome';
+}
+.fa-check
+{
+  color:#56bc94;  
+}
+.fa-times,.item-disable
+{
+  color:#999;
+}
+/********************/
+/*the style of sign up button*/
+.btn {
+  padding: 3em 0;
+  text-align: center;
+}
+.btn a {
+  background: #56bc94;
+  padding: 10px 95px;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 0.25rem;
+}
