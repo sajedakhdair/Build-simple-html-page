@@ -22,6 +22,7 @@ table of contents
     2.2.4) button send message
     2.2.5) social media icon  
     
+  2.3)Footer
 */
 
 *
@@ -75,7 +76,6 @@ span
     position: absolute;
     padding-top: 10px;
     padding-inline-start: 10px;
-
 }
 /*nav style */
 nav
@@ -202,6 +202,8 @@ h2
    font-weight: 500;
     margin: 0;
   }
+/*popular*/
+/*end of popular*/
 /*the style of price */
 .entry-title .price {
     position: absolute;
@@ -254,6 +256,13 @@ h2
   border-bottom: 1px solid #efefef;
   font-family:  'Lato',arial, sans-serif;
   padding: 10px 0;
+  /*///////////////////////////////*/
+  display: block;
+  white-space: nowrap;
+  width: 17em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+/*//////////////////////////////////////////*/
 }
 .entry-content li:last-child {
   border: none;
@@ -404,4 +413,32 @@ margin-inline-start: 365px;
   margin-top: 80px;
   padding-left: -6px;
   padding-right: -6px;
+}
+/*footer*/
+.footer .copyright {
+  color: #b3b3b3;
+  margin-right: 15px;
+}
+.footer {
+  background: #444;
+  color: #fff;
+  padding: 15px 0;
+  font-family: 'Lato', arial, sans-serif;
+
+
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.small {
+  font-size: 80%;
+  font-weight: 400;
+}
+ .copyright a {
+  color: #56bc94;
+  text-decoration: none;
 }
